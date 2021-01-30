@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pomo View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PomoViewController" customModule="Minipomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVQ-pr-jWM" userLabel="PomoAnimationView" customClass="PomoAnimationView" customModule="Minipomo" customModuleProvider="target">
+                                <rect key="frame" x="24" y="298" width="366" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21B-O3-66p" customClass="PomoTimeLabel" customModule="Minipomo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="114" width="168.5" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="21B-O3-66p" firstAttribute="centerX" secondItem="dVQ-pr-jWM" secondAttribute="centerX" id="CZg-QC-ekW"/>
+                                    <constraint firstAttribute="height" constant="300" id="Ivv-Uy-Voo"/>
+                                    <constraint firstItem="21B-O3-66p" firstAttribute="centerY" secondItem="dVQ-pr-jWM" secondAttribute="centerY" id="MkI-rd-my4"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="SoJ-UI-3pJ">
+                                <rect key="frame" x="144.5" y="654" width="125" height="152"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGp-B3-fFR" customClass="PomoStartButton" customModule="Minipomo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="60"/>
+                                        <color key="backgroundColor" name="nephritis"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                        <inset key="contentEdgeInsets" minX="32" minY="16" maxX="32" maxY="16"/>
+                                        <state key="normal" title="Старт">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="carrot"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vnv-xV-IsX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV7-bw-3n1" customClass="PomoStopButton" customModule="Minipomo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="125" height="60"/>
+                                        <color key="backgroundColor" name="nephritis"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                        <inset key="contentEdgeInsets" minX="32" minY="16" maxX="32" maxY="16"/>
+                                        <state key="normal" title="Стоп">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="carrot"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="stopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EaE-px-lvD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SoJ-UI-3pJ" firstAttribute="top" secondItem="dVQ-pr-jWM" secondAttribute="bottom" constant="56" id="1Gv-Xl-D6y"/>
+                            <constraint firstItem="dVQ-pr-jWM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gg3-X8-J5U"/>
+                            <constraint firstItem="SoJ-UI-3pJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Its-Ra-4cj"/>
+                            <constraint firstItem="dVQ-pr-jWM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Ucq-3u-S7P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dVQ-pr-jWM" secondAttribute="trailing" constant="24" id="usW-mL-IKx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pomoAnimationView" destination="dVQ-pr-jWM" id="bAF-CW-OA7"/>
+                        <outlet property="startButton" destination="eGp-B3-fFR" id="ctI-wh-wcE"/>
+                        <outlet property="stopButton" destination="JV7-bw-3n1" id="XVt-Cu-cZL"/>
+                        <outlet property="timeLabel" destination="21B-O3-66p" id="R2u-WV-hLg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1106" y="58"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="carrot">
+            <color red="0.90200001001358032" green="0.49399998784065247" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="nephritis">
+            <color red="0.15299999713897705" green="0.68199998140335083" blue="0.37599998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
