@@ -20,7 +20,6 @@
 		E620440C25B816D700F5D39D /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620440B25B816D700F5D39D /* CountdownTimer.swift */; };
 		E62D546825C4335900865212 /* PomoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D546725C4335900865212 /* PomoSettings.swift */; };
 		E62D546C25C54DBD00865212 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D546B25C54DBD00865212 /* Int+Ext.swift */; };
-		E6ED103625B9660700C27ADA /* MinipomoTimerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED103525B9660700C27ADA /* MinipomoTimerModelTests.swift */; };
 		E6ED104225B99D8800C27ADA /* PomoStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED104125B99D8800C27ADA /* PomoStartButton.swift */; };
 		E6ED232325BEF8070063A96E /* TimePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED232225BEF8070063A96E /* TimePickerController.swift */; };
 /* End PBXBuildFile section */
@@ -52,8 +51,6 @@
 		E62D546725C4335900865212 /* PomoSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoSettings.swift; sourceTree = "<group>"; };
 		E62D546B25C54DBD00865212 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		E6ED103325B9660600C27ADA /* MinipomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinipomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6ED103525B9660700C27ADA /* MinipomoTimerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinipomoTimerModelTests.swift; sourceTree = "<group>"; };
-		E6ED103725B9660700C27ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6ED104125B99D8800C27ADA /* PomoStartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoStartButton.swift; sourceTree = "<group>"; };
 		E6ED232225BEF8070063A96E /* TimePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				E62043E425B7087C00F5D39D /* Minipomo */,
-				E6ED103425B9660700C27ADA /* MinipomoTests */,
 				E62043E325B7087C00F5D39D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,15 +143,6 @@
 				E62D546B25C54DBD00865212 /* Int+Ext.swift */,
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		E6ED103425B9660700C27ADA /* MinipomoTests */ = {
-			isa = PBXGroup;
-			children = (
-				E6ED103525B9660700C27ADA /* MinipomoTimerModelTests.swift */,
-				E6ED103725B9660700C27ADA /* Info.plist */,
-			);
-			path = MinipomoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6ED103625B9660700C27ADA /* MinipomoTimerModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
