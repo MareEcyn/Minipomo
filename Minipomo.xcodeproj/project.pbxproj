@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06D7FD220626C857F8629891 /* Pods_MinipomoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C9906E05F7EF897B9DDFD2 /* Pods_MinipomoTests.framework */; };
+		3BBA737814843A3F381F9FCC /* Pods_Minipomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A65862EFE0DE6472A64094 /* Pods_Minipomo.framework */; };
 		E61B84A725BB1B49001E7544 /* PomoStopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B84A625BB1B49001E7544 /* PomoStopButton.swift */; };
 		E61B84AB25BB3353001E7544 /* TimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B84AA25BB3353001E7544 /* TimeLabel.swift */; };
 		E62043E625B7087C00F5D39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62043E525B7087C00F5D39D /* AppDelegate.swift */; };
@@ -18,7 +20,6 @@
 		E620440125B7124A00F5D39D /* PomoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620440025B7124A00F5D39D /* PomoAnimationView.swift */; };
 		E620440825B71A1700F5D39D /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620440725B71A1700F5D39D /* UIColor+Ext.swift */; };
 		E620440C25B816D700F5D39D /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620440B25B816D700F5D39D /* CountdownTimer.swift */; };
-		E62D546825C4335900865212 /* PomoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D546725C4335900865212 /* PomoSettings.swift */; };
 		E62D546C25C54DBD00865212 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D546B25C54DBD00865212 /* Int+Ext.swift */; };
 		E6ED104225B99D8800C27ADA /* PomoStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED104125B99D8800C27ADA /* PomoStartButton.swift */; };
 		E6ED232325BEF8070063A96E /* TimePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED232225BEF8070063A96E /* TimePickerController.swift */; };
@@ -35,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EA51D764BAC6B41673F57C1 /* Pods-MinipomoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinipomoTests.debug.xcconfig"; path = "Target Support Files/Pods-MinipomoTests/Pods-MinipomoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13C9906E05F7EF897B9DDFD2 /* Pods_MinipomoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinipomoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28A65862EFE0DE6472A64094 /* Pods_Minipomo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minipomo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46866D602BA13E7476911CB9 /* Pods-Minipomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minipomo.debug.xcconfig"; path = "Target Support Files/Pods-Minipomo/Pods-Minipomo.debug.xcconfig"; sourceTree = "<group>"; };
+		4B0032D3099FCBCBEDEBBB44 /* Pods-MinipomoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinipomoTests.release.xcconfig"; path = "Target Support Files/Pods-MinipomoTests/Pods-MinipomoTests.release.xcconfig"; sourceTree = "<group>"; };
+		883ECCD692BF77D72BC6C94B /* Pods-Minipomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minipomo.release.xcconfig"; path = "Target Support Files/Pods-Minipomo/Pods-Minipomo.release.xcconfig"; sourceTree = "<group>"; };
 		E61B84A625BB1B49001E7544 /* PomoStopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoStopButton.swift; sourceTree = "<group>"; };
 		E61B84AA25BB3353001E7544 /* TimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLabel.swift; sourceTree = "<group>"; };
 		E62043E225B7087C00F5D39D /* Minipomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minipomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +55,6 @@
 		E620440025B7124A00F5D39D /* PomoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoAnimationView.swift; sourceTree = "<group>"; };
 		E620440725B71A1700F5D39D /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		E620440B25B816D700F5D39D /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
-		E62D546725C4335900865212 /* PomoSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoSettings.swift; sourceTree = "<group>"; };
 		E62D546B25C54DBD00865212 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		E6ED103325B9660600C27ADA /* MinipomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinipomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6ED104125B99D8800C27ADA /* PomoStartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoStartButton.swift; sourceTree = "<group>"; };
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBA737814843A3F381F9FCC /* Pods_Minipomo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,17 +74,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D7FD220626C857F8629891 /* Pods_MinipomoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B14BF9E1D10F1E4FC2773E9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46866D602BA13E7476911CB9 /* Pods-Minipomo.debug.xcconfig */,
+				883ECCD692BF77D72BC6C94B /* Pods-Minipomo.release.xcconfig */,
+				0EA51D764BAC6B41673F57C1 /* Pods-MinipomoTests.debug.xcconfig */,
+				4B0032D3099FCBCBEDEBBB44 /* Pods-MinipomoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D472C2466EB24DCEB919A2B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28A65862EFE0DE6472A64094 /* Pods_Minipomo.framework */,
+				13C9906E05F7EF897B9DDFD2 /* Pods_MinipomoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E62043D925B7087C00F5D39D = {
 			isa = PBXGroup;
 			children = (
 				E62043E425B7087C00F5D39D /* Minipomo */,
 				E62043E325B7087C00F5D39D /* Products */,
+				B14BF9E1D10F1E4FC2773E9C /* Pods */,
+				D472C2466EB24DCEB919A2B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				E620440B25B816D700F5D39D /* CountdownTimer.swift */,
-				E62D546725C4335900865212 /* PomoSettings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E62043F625B7088300F5D39D /* Build configuration list for PBXNativeTarget "Minipomo" */;
 			buildPhases = (
+				F58A44F3CA13EB09AFE92941 /* [CP] Check Pods Manifest.lock */,
 				E62043DE25B7087C00F5D39D /* Sources */,
 				E62043DF25B7087C00F5D39D /* Frameworks */,
 				E62043E025B7087C00F5D39D /* Resources */,
+				E6571AF125EFBA2800D16E68 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -169,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6ED103C25B9660700C27ADA /* Build configuration list for PBXNativeTarget "MinipomoTests" */;
 			buildPhases = (
+				58366411BE29C8814E7859E8 /* [CP] Check Pods Manifest.lock */,
 				E6ED102F25B9660600C27ADA /* Sources */,
 				E6ED103025B9660600C27ADA /* Frameworks */,
 				E6ED103125B9660600C27ADA /* Resources */,
@@ -240,6 +272,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58366411BE29C8814E7859E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MinipomoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6571AF125EFBA2800D16E68 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		F58A44F3CA13EB09AFE92941 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Minipomo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E62043DE25B7087C00F5D39D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -255,7 +351,6 @@
 				E620440C25B816D700F5D39D /* CountdownTimer.swift in Sources */,
 				E61B84AB25BB3353001E7544 /* TimeLabel.swift in Sources */,
 				E620440125B7124A00F5D39D /* PomoAnimationView.swift in Sources */,
-				E62D546825C4335900865212 /* PomoSettings.swift in Sources */,
 				E62D546C25C54DBD00865212 /* Int+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +510,7 @@
 		};
 		E62043F725B7088300F5D39D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46866D602BA13E7476911CB9 /* Pods-Minipomo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -435,6 +531,7 @@
 		};
 		E62043F825B7088300F5D39D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883ECCD692BF77D72BC6C94B /* Pods-Minipomo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +552,7 @@
 		};
 		E6ED103A25B9660700C27ADA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA51D764BAC6B41673F57C1 /* Pods-MinipomoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +573,7 @@
 		};
 		E6ED103B25B9660700C27ADA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0032D3099FCBCBEDEBBB44 /* Pods-MinipomoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
