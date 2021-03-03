@@ -5,8 +5,6 @@
 //  Created by Loki on 19.01.2021.
 //
 
-// FIXME: Приостановленная анимация начинается с неправильного места (забегает вперед)
-
 import UIKit
 
 class PomoAnimationView: UIView {
@@ -77,10 +75,11 @@ extension PomoAnimationView: CAAnimationDelegate {
     
     func resumeProgressAnimation() {
         let pausedTime = progressLayer.timeOffset
-//        progressLayer.beginTime = 0.0
-        let timeSincePause = progressLayer.convertTime(CACurrentMediaTime(), from: nil) - pausedTime
         progressLayer.speed = 1.0
         progressLayer.timeOffset = 0.0
+        progressLayer.beginTime = 0
+//        progressLayer.beginTime = 0.0
+        let timeSincePause = progressLayer.convertTime(CACurrentMediaTime(), from: nil) - pausedTime
         progressLayer.beginTime = timeSincePause
     }
 }

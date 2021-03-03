@@ -5,6 +5,8 @@
 //  Created by Loki on 20.01.2021.
 //
 
+// TODO: - Timer needs to be 'ms' precise, otherwise every time it paused and resumed he may result in invalid seconds remaining
+
 import Foundation
 
 protocol Stopwatch {
