@@ -34,18 +34,10 @@ extension PomoAnimationView: CAAnimationDelegate {
     
     func animationDidStart(_ anim: CAAnimation) {
         progressLayer.strokeColor = UIColor.Custom.green.cgColor
-//        guard let name = anim.value(forKey: "name") as? String else { return }
-//        if name == "progress", let layer = anim.value(forKey: "layer") as? CAShapeLayer {
-//            layer.strokeColor = UIColor.app.green.cgColor
-//        }
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         progressLayer.strokeColor = UIColor.Custom.darkGray.cgColor
-//        guard let name = anim.value(forKey: "name") as? String else { return }
-//        if name == "progress", let layer = anim.value(forKey: "layer") as? CAShapeLayer {
-//            layer.strokeColor = UIColor.app.darkGray.cgColor
-//        }
     }
     
     func startProgressAnimation(duration: Double) {
@@ -54,8 +46,6 @@ extension PomoAnimationView: CAAnimationDelegate {
         animation.duration = duration
         animation.fillMode = .forwards
         animation.isRemovedOnCompletion = false
-//        animation.setValue("progress", forKey: "name")
-//        animation.setValue(progressLayer, forKey: "layer")
         animation.delegate = self
         progressLayer.add(animation, forKey: "progress")
         progressLayer.speed = 1.0
@@ -78,7 +68,6 @@ extension PomoAnimationView: CAAnimationDelegate {
         progressLayer.speed = 1.0
         progressLayer.timeOffset = 0.0
         progressLayer.beginTime = 0
-//        progressLayer.beginTime = 0.0
         let timeSincePause = progressLayer.convertTime(CACurrentMediaTime(), from: nil) - pausedTime
         progressLayer.beginTime = timeSincePause
     }
