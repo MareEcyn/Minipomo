@@ -19,11 +19,11 @@ class PomoAnimationView: UIView {
             arcCenter: CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0),
             radius: 150, startAngle: -.pi / 2, endAngle: 3 * .pi / 2, clockwise: true).cgPath
         backgroundLayer.fillColor = UIColor.clear.cgColor
-        backgroundLayer.strokeColor = UIColor.app.lightGray.cgColor
+        backgroundLayer.strokeColor = UIColor.Custom.lightGray.cgColor
         backgroundLayer.lineWidth = 8.0
         progressLayer.path = backgroundLayer.path
         progressLayer.fillColor = UIColor.clear.cgColor
-        progressLayer.strokeColor = UIColor.app.green.cgColor
+        progressLayer.strokeColor = UIColor.Custom.green.cgColor
         progressLayer.lineWidth = 8.0
         progressLayer.lineCap = .round
         progressLayer.strokeEnd = 0.0
@@ -35,7 +35,7 @@ class PomoAnimationView: UIView {
 extension PomoAnimationView: CAAnimationDelegate {
     
     func animationDidStart(_ anim: CAAnimation) {
-        progressLayer.strokeColor = UIColor.app.green.cgColor
+        progressLayer.strokeColor = UIColor.Custom.green.cgColor
 //        guard let name = anim.value(forKey: "name") as? String else { return }
 //        if name == "progress", let layer = anim.value(forKey: "layer") as? CAShapeLayer {
 //            layer.strokeColor = UIColor.app.green.cgColor
@@ -43,7 +43,7 @@ extension PomoAnimationView: CAAnimationDelegate {
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        progressLayer.strokeColor = UIColor.app.darkGray.cgColor
+        progressLayer.strokeColor = UIColor.Custom.darkGray.cgColor
 //        guard let name = anim.value(forKey: "name") as? String else { return }
 //        if name == "progress", let layer = anim.value(forKey: "layer") as? CAShapeLayer {
 //            layer.strokeColor = UIColor.app.darkGray.cgColor
@@ -66,7 +66,7 @@ extension PomoAnimationView: CAAnimationDelegate {
     
     func stopProgressAnimation() {
         progressLayer.removeAnimation(forKey: "progress")
-        progressLayer.strokeColor = UIColor.app.green.cgColor
+        progressLayer.strokeColor = UIColor.Custom.green.cgColor
     }
     
     func pauseProgressAnimation() {

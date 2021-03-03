@@ -16,19 +16,19 @@ class PomoStartButton: UIButton {
     }
     
     func setAsUnactive() {
-        backgroundColor = UIColor.app.green
+        backgroundColor = UIColor.Custom.green
         setTitle("Старт", for: .normal)
         setTitleColor(.white, for: .normal)
     }
     
     func setAsActive() {
-        backgroundColor = UIColor.app.lightGray
+        backgroundColor = UIColor.Custom.lightGray
         setTitle("Пауза", for: .normal)
         setTitleColor(.black, for: .normal)
     }
     
     func setAsPaused() {
-        backgroundColor = UIColor.app.lightGray
+        backgroundColor = UIColor.Custom.lightGray
         setTitle("Дальше", for: .normal)
         setTitleColor(.black, for: .normal)
     }

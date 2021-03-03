@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIColor {
-    struct app {
+    struct Custom {
         static let lightGray = UIColor(named: "cloud") ?? .lightGray
         static let darkGray = UIColor(named: "concrete") ?? .darkGray
         static let orange = UIColor(named: "carrot") ?? .orange
