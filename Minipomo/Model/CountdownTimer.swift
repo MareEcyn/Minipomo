@@ -21,22 +21,18 @@ protocol Stopwatch {
     /// - Parameter duration: in seconds
     func addTime(duration: Int)
     func stop()
-}
-
-protocol StopwatchObserver: class {
-    var time: Int { get set }
+    func tickAction(_ action: @escaping (Int) -> Void)
 }
 
 class CountdownTimer: Stopwatch {
-    
-    private unowned let observer: StopwatchObserver!
     private var timer: Timer?
     private var time: Int = 0 {
-        willSet { observer.time = newValue }
+        willSet { actionOnTick?(newValue) }
     }
+    private var actionOnTick: ((Int) -> Void)?
     
-    init(observer: StopwatchObserver) {
-        self.observer = observer
+    func tickAction(_ action: @escaping (Int) -> Void) {
+        actionOnTick = action
     }
     
     func start(duration: Int) {

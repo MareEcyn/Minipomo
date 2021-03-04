@@ -13,7 +13,7 @@
 
 import UIKit
 
-class PomoViewController: UIViewController, StopwatchObserver {
+class PomoViewController: UIViewController /*StopwatchObserver*/ {
     private enum PomoStatus {
         case unactive, active, paused, resumed, completed, stopped
     }
@@ -40,7 +40,8 @@ class PomoViewController: UIViewController, StopwatchObserver {
     override func viewDidLoad() {
         super.viewDidLoad()
         status = .unactive
-        timer = CountdownTimer(observer: self)
+        timer = CountdownTimer()
+        timer.tickAction { [weak self] (value) in self?.time = value }
         timePicker = UIPickerView()
         timePickerController = TimePickerController()
         timePicker.delegate = timePickerController
