@@ -5,7 +5,6 @@
 //  Created by Loki on 19.01.2021.
 //
 
-// TODO: Таймер должен восстановить работу после выхода из background mode
 // TODO: hideTimePicker() violate SRP
 // TODO: Доделать flow of control для полного завершения помо
 // TODO: Default focus time do not change when return from settings screen
