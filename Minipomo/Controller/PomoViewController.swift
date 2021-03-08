@@ -5,12 +5,10 @@
 //  Created by Loki on 19.01.2021.
 //
 
-// TODO: При отрисовке timePicker грузить последний выбор, или 50 минут.
-// TODO: При нажатии кнопки "Стоп" грузить последний выбор, или 50 минут.
 // TODO: Таймер должен восстановить работу после выхода из background mode
 // TODO: hideTimePicker() violate SRP
 // TODO: Доделать flow of control для полного завершения помо
-// FIXME: Убрать возможность выбора времени в середине цикла.
+// TODO: Default focus time do not change when return from settings screen
 
 import UIKit
 
@@ -29,7 +27,7 @@ class PomoViewController: UIViewController {
     private var status: PomoStatus!
     
     private var timer: Stopwatch!
-    var time: Int = UserDefaults.standard.integer(forKey: Const.SettingsKey.focusTime.rawValue) {
+    var time: Int = 0 {
         willSet(value) {
             timeLabel.text = value.toTimeString
             if value == 0 {
@@ -50,6 +48,7 @@ class PomoViewController: UIViewController {
         timePicker.delegate = timePickerController
         timePicker.dataSource = timePickerController
         setGestures()
+        time = UserDefaults.standard.integer(forKey: Const.SettingsKey.focusTime.rawValue)
     }
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
@@ -102,6 +101,7 @@ class PomoViewController: UIViewController {
             self.status = .unactive
         case .stopped:
             timer.stop()
+            time = UserDefaults.standard.integer(forKey: Const.SettingsKey.focusTime.rawValue)
             pomoAnimationView.stopProgressAnimation()
             startButton.setAsUnactive()
             stopButton.isHidden = true
@@ -117,6 +117,7 @@ class PomoViewController: UIViewController {
     }
     
     @objc private func showTimePicker() {
+        guard status == .unactive else { return }
         timeLabel.isHidden = true
         timePicker.translatesAutoresizingMaskIntoConstraints = false
         pomoAnimationView.addSubview(timePicker)
@@ -128,6 +129,7 @@ class PomoViewController: UIViewController {
     
     @objc private func hideTimePicker() {
 //        time = timePickerController.selectedTime * 60
+        guard timePickerController.selectedTime != 0 else { return }
         time = timePickerController.selectedTime
         timePicker.removeFromSuperview()
         timeLabel.isHidden = false

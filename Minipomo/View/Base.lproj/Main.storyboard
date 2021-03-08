@@ -35,14 +35,14 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="SoJ-UI-3pJ">
-                                <rect key="frame" x="144.5" y="654" width="125" height="152"/>
+                                <rect key="frame" x="138.5" y="654" width="137" height="152"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGp-B3-fFR" customClass="PomoStartButton" customModule="Minipomo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="60"/>
                                         <color key="backgroundColor" name="nephritis"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                         <inset key="contentEdgeInsets" minX="32" minY="16" maxX="32" maxY="16"/>
-                                        <state key="normal" title="Старт">
+                                        <state key="normal" title="Начать">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -61,7 +61,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV7-bw-3n1" customClass="PomoStopButton" customModule="Minipomo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="125" height="60"/>
+                                        <rect key="frame" x="0.0" y="92" width="137" height="60"/>
                                         <color key="backgroundColor" name="nephritis"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                         <inset key="contentEdgeInsets" minX="32" minY="16" maxX="32" maxY="16"/>
