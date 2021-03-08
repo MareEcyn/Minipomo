@@ -10,10 +10,11 @@
 // TODO: Таймер должен восстановить работу после выхода из background mode
 // TODO: hideTimePicker() violate SRP
 // TODO: Доделать flow of control для полного завершения помо
+// FIXME: Убрать возможность выбора времени в середине цикла.
 
 import UIKit
 
-class PomoViewController: UIViewController /*StopwatchObserver*/ {
+class PomoViewController: UIViewController {
     private enum PomoStatus {
         case unactive, active, paused, resumed, completed, stopped
     }
@@ -28,7 +29,7 @@ class PomoViewController: UIViewController /*StopwatchObserver*/ {
     private var status: PomoStatus!
     
     private var timer: Stopwatch!
-    var time: Int = 0 {
+    var time: Int = UserDefaults.standard.integer(forKey: Const.SettingsKey.focusTime.rawValue) {
         willSet(value) {
             timeLabel.text = value.toTimeString
             if value == 0 {
@@ -44,6 +45,8 @@ class PomoViewController: UIViewController /*StopwatchObserver*/ {
         timer.tickAction { [weak self] (value) in self?.time = value }
         timePicker = UIPickerView()
         timePickerController = TimePickerController()
+        let range = UserDefaults.standard.array(forKey: Const.SettingsKey.focusTimeRange.rawValue)!
+        timePickerController.components = range as! [Int]
         timePicker.delegate = timePickerController
         timePicker.dataSource = timePickerController
         setGestures()
@@ -120,11 +123,12 @@ class PomoViewController: UIViewController /*StopwatchObserver*/ {
         timePicker.centerXAnchor.constraint(equalTo: pomoAnimationView.centerXAnchor).isActive = true
         timePicker.centerYAnchor.constraint(equalTo: pomoAnimationView.centerYAnchor).isActive = true
         timePicker.widthAnchor.constraint(equalTo: pomoAnimationView.widthAnchor, constant: -128).isActive = true
-        timePicker.selectRow(49, inComponent: 0, animated: true)
+        timePicker.selectRow(1, inComponent: 0, animated: false) // FIXME: - magic value
     }
     
     @objc private func hideTimePicker() {
-        time = timePickerController.selectedTime * 60
+//        time = timePickerController.selectedTime * 60
+        time = timePickerController.selectedTime
         timePicker.removeFromSuperview()
         timeLabel.isHidden = false
     }
