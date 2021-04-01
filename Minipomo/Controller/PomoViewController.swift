@@ -5,6 +5,7 @@
 //  Created by Loki on 19.01.2021.
 //
 
+// TODO: Background mode
 // TODO: hideTimePicker() violate SRP
 // TODO: Доделать flow of control для полного завершения помо
 // TODO: Default focus time do not change when return from settings screen
@@ -12,7 +13,7 @@
 import UIKit
 
 class PomoViewController: UIViewController {
-    private enum PomoStatus {
+    enum PomoStatus {
         case unactive, active, paused, resumed, completed, stopped
     }
     
@@ -23,7 +24,7 @@ class PomoViewController: UIViewController {
     
     private var timePicker: UIPickerView!
     private var timePickerController: TimePickerController!
-    private var status: PomoStatus!
+    private(set) var status: PomoStatus!
     
     private var timer: Stopwatch!
     var time: Int = 0 {
