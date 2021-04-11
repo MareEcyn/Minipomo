@@ -36,9 +36,9 @@ extension PomoAnimationView: CAAnimationDelegate {
         progressLayer.strokeColor = UIColor.Custom.green.cgColor
     }
     
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        progressLayer.strokeColor = UIColor.Custom.darkGray.cgColor
-    }
+//    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+//        progressLayer.strokeColor = UIColor.Custom.darkGray.cgColor
+//    }
     
     func startProgressAnimation(duration: Double) {
         let animation = CABasicAnimation(keyPath: "strokeEnd")

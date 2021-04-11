@@ -21,6 +21,9 @@
 		E620440825B71A1700F5D39D /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620440725B71A1700F5D39D /* UIColor+Ext.swift */; };
 		E620440C25B816D700F5D39D /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620440B25B816D700F5D39D /* CountdownTimer.swift */; };
 		E62D546C25C54DBD00865212 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D546B25C54DBD00865212 /* Int+Ext.swift */; };
+		E65EF05225F3CA3900325AC2 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EF05125F3CA3900325AC2 /* SettingsController.swift */; };
+		E65EF05625F3E4F700325AC2 /* TimeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EF05525F3E4F700325AC2 /* TimeSelectViewController.swift */; };
+		E65EF05A25F4E42F00325AC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EF05925F4E42F00325AC2 /* Constants.swift */; };
 		E6ED104225B99D8800C27ADA /* PomoStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED104125B99D8800C27ADA /* PomoStartButton.swift */; };
 		E6ED232325BEF8070063A96E /* TimePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED232225BEF8070063A96E /* TimePickerController.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,9 @@
 		E620440725B71A1700F5D39D /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		E620440B25B816D700F5D39D /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		E62D546B25C54DBD00865212 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
+		E65EF05125F3CA3900325AC2 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		E65EF05525F3E4F700325AC2 /* TimeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectViewController.swift; sourceTree = "<group>"; };
+		E65EF05925F4E42F00325AC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E6ED103325B9660600C27ADA /* MinipomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinipomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6ED104125B99D8800C27ADA /* PomoStartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoStartButton.swift; sourceTree = "<group>"; };
 		E6ED232225BEF8070063A96E /* TimePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerController.swift; sourceTree = "<group>"; };
@@ -161,6 +167,8 @@
 			children = (
 				E62043E925B7087C00F5D39D /* PomoViewController.swift */,
 				E6ED232225BEF8070063A96E /* TimePickerController.swift */,
+				E65EF05125F3CA3900325AC2 /* SettingsController.swift */,
+				E65EF05525F3E4F700325AC2 /* TimeSelectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 			children = (
 				E620440725B71A1700F5D39D /* UIColor+Ext.swift */,
 				E62D546B25C54DBD00865212 /* Int+Ext.swift */,
+				E65EF05925F4E42F00325AC2 /* Constants.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -341,15 +350,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65EF05225F3CA3900325AC2 /* SettingsController.swift in Sources */,
 				E62043EA25B7087C00F5D39D /* PomoViewController.swift in Sources */,
 				E62043E625B7087C00F5D39D /* AppDelegate.swift in Sources */,
 				E6ED232325BEF8070063A96E /* TimePickerController.swift in Sources */,
+				E65EF05625F3E4F700325AC2 /* TimeSelectViewController.swift in Sources */,
 				E620440825B71A1700F5D39D /* UIColor+Ext.swift in Sources */,
 				E62043E825B7087C00F5D39D /* SceneDelegate.swift in Sources */,
 				E61B84A725BB1B49001E7544 /* PomoStopButton.swift in Sources */,
 				E6ED104225B99D8800C27ADA /* PomoStartButton.swift in Sources */,
 				E620440C25B816D700F5D39D /* CountdownTimer.swift in Sources */,
 				E61B84AB25BB3353001E7544 /* TimeLabel.swift in Sources */,
+				E65EF05A25F4E42F00325AC2 /* Constants.swift in Sources */,
 				E620440125B7124A00F5D39D /* PomoAnimationView.swift in Sources */,
 				E62D546C25C54DBD00865212 /* Int+Ext.swift in Sources */,
 			);

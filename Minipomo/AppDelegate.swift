@@ -10,9 +10,8 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        insertDefaultSettings()
         return true
     }
 
@@ -28,6 +27,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func insertDefaultSettings() {
+        let shared = UserDefaults.standard
+        guard shared.value(forKey: Const.SettingsKey.initialSetup.rawValue) == nil else { return }
+        
+        shared.setValuesForKeys([
+            Const.SettingsKey.initialSetup.rawValue: true,
+            Const.SettingsKey.timeLeft.rawValue: 0,
+            Const.SettingsKey.focusTimeRange.rawValue: Array(stride(from: 5, to: 121, by: 5)),
+            Const.SettingsKey.smallRestTimeRange.rawValue: Array(stride(from: 5, to: 21, by: 5)),
+            Const.SettingsKey.bigRestTimeRange.rawValue: Array(stride(from: 20, to: 51, by: 5)),
+            Const.SettingsKey.soundAtCompletion.rawValue: false,
+            Const.SettingsKey.notifyAtCompletion.rawValue: false,
+            Const.SettingsKey.focusTime.rawValue: 50,
+            Const.SettingsKey.smallRestTime.rawValue: 15,
+            Const.SettingsKey.bigRestTime.rawValue: 30,
+        ])
     }
 
 }

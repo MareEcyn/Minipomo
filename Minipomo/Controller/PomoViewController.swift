@@ -5,16 +5,15 @@
 //  Created by Loki on 19.01.2021.
 //
 
-// TODO: При отрисовке timePicker грузить последний выбор, или 50 минут.
-// TODO: При нажатии кнопки "Стоп" грузить последний выбор, или 50 минут.
-// TODO: Таймер должен восстановить работу после выхода из background mode
+// TODO: Background mode
 // TODO: hideTimePicker() violate SRP
 // TODO: Доделать flow of control для полного завершения помо
+// TODO: Default focus time do not change when return from settings screen
 
 import UIKit
 
-class PomoViewController: UIViewController /*StopwatchObserver*/ {
-    private enum PomoStatus {
+class PomoViewController: UIViewController {
+    enum PomoStatus {
         case unactive, active, paused, resumed, completed, stopped
     }
     
@@ -25,7 +24,7 @@ class PomoViewController: UIViewController /*StopwatchObserver*/ {
     
     private var timePicker: UIPickerView!
     private var timePickerController: TimePickerController!
-    private var status: PomoStatus!
+    private(set) var status: PomoStatus!
     
     private var timer: Stopwatch!
     var time: Int = 0 {
@@ -44,9 +43,12 @@ class PomoViewController: UIViewController /*StopwatchObserver*/ {
         timer.tickAction { [weak self] (value) in self?.time = value }
         timePicker = UIPickerView()
         timePickerController = TimePickerController()
+        let range = UserDefaults.standard.array(forKey: Const.SettingsKey.focusTimeRange.rawValue)!
+        timePickerController.components = range as! [Int]
         timePicker.delegate = timePickerController
         timePicker.dataSource = timePickerController
         setGestures()
+        time = UserDefaults.standard.integer(forKey: Const.SettingsKey.focusTime.rawValue)
     }
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
@@ -99,6 +101,7 @@ class PomoViewController: UIViewController /*StopwatchObserver*/ {
             self.status = .unactive
         case .stopped:
             timer.stop()
+            time = UserDefaults.standard.integer(forKey: Const.SettingsKey.focusTime.rawValue)
             pomoAnimationView.stopProgressAnimation()
             startButton.setAsUnactive()
             stopButton.isHidden = true
@@ -114,17 +117,20 @@ class PomoViewController: UIViewController /*StopwatchObserver*/ {
     }
     
     @objc private func showTimePicker() {
+        guard status == .unactive else { return }
         timeLabel.isHidden = true
         timePicker.translatesAutoresizingMaskIntoConstraints = false
         pomoAnimationView.addSubview(timePicker)
         timePicker.centerXAnchor.constraint(equalTo: pomoAnimationView.centerXAnchor).isActive = true
         timePicker.centerYAnchor.constraint(equalTo: pomoAnimationView.centerYAnchor).isActive = true
         timePicker.widthAnchor.constraint(equalTo: pomoAnimationView.widthAnchor, constant: -128).isActive = true
-        timePicker.selectRow(49, inComponent: 0, animated: true)
+        timePicker.selectRow(1, inComponent: 0, animated: false) // FIXME: - magic value
     }
     
     @objc private func hideTimePicker() {
-        time = timePickerController.selectedTime * 60
+//        time = timePickerController.selectedTime * 60
+        guard timePickerController.selectedTime != 0 else { return }
+        time = timePickerController.selectedTime
         timePicker.removeFromSuperview()
         timeLabel.isHidden = false
     }
