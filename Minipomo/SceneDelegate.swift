@@ -5,6 +5,8 @@
 //  Created by Loki on 19.01.2021.
 //
 
+// swiftlint:disable line_length unused_optional_binding
+
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
