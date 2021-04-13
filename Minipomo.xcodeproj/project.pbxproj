@@ -39,11 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EA51D764BAC6B41673F57C1 /* Pods-MinipomoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinipomoTests.debug.xcconfig"; path = "Target Support Files/Pods-MinipomoTests/Pods-MinipomoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13C9906E05F7EF897B9DDFD2 /* Pods_MinipomoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinipomoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A65862EFE0DE6472A64094 /* Pods_Minipomo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minipomo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46866D602BA13E7476911CB9 /* Pods-Minipomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minipomo.debug.xcconfig"; path = "Target Support Files/Pods-Minipomo/Pods-Minipomo.debug.xcconfig"; sourceTree = "<group>"; };
-		4B0032D3099FCBCBEDEBBB44 /* Pods-MinipomoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinipomoTests.release.xcconfig"; path = "Target Support Files/Pods-MinipomoTests/Pods-MinipomoTests.release.xcconfig"; sourceTree = "<group>"; };
 		883ECCD692BF77D72BC6C94B /* Pods-Minipomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minipomo.release.xcconfig"; path = "Target Support Files/Pods-Minipomo/Pods-Minipomo.release.xcconfig"; sourceTree = "<group>"; };
 		E61B84A625BB1B49001E7544 /* PomoStopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoStopButton.swift; sourceTree = "<group>"; };
 		E61B84AA25BB3353001E7544 /* TimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLabel.swift; sourceTree = "<group>"; };
@@ -93,8 +90,6 @@
 			children = (
 				46866D602BA13E7476911CB9 /* Pods-Minipomo.debug.xcconfig */,
 				883ECCD692BF77D72BC6C94B /* Pods-Minipomo.release.xcconfig */,
-				0EA51D764BAC6B41673F57C1 /* Pods-MinipomoTests.debug.xcconfig */,
-				4B0032D3099FCBCBEDEBBB44 /* Pods-MinipomoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -103,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				28A65862EFE0DE6472A64094 /* Pods_Minipomo.framework */,
-				13C9906E05F7EF897B9DDFD2 /* Pods_MinipomoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
