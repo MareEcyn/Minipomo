@@ -6,7 +6,7 @@ target 'Minipomo' do
   use_frameworks!
   pod 'SwiftLint'
 
-  target 'MinipomoTests' do
+  target 'MinipomoUnitTests' do
     inherit! :search_paths
   end
 
