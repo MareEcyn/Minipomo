@@ -1,18 +1,21 @@
-name: SwiftAction
-
-on:
+name: Build and Test
+on: 
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+    branches: [master]
 jobs:
   build:
-    runs-on: macos-latest
-
+    runs-on: [macos-latest]
+    env:
+      XC_VERSION: ${{ '12.4' }}
+      XC_WORKSPACE: ${{ 'Minipomo.xcworkspace' }}
+      XC_SCHEME: ${{ 'Minipomo' }}
     steps:
     - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    - name: Install dependencies
+      run: |
+        pod install
+      shell: bash
+    - name: Select Xcode version
+      run: "sudo xcode-select -s /Applications/Xcode_$XC_VERSION.app"
+    - name: Run all tests
+      run: /usr/bin/xcodebuild test -workspace "$XC_WORKSPACE" -scheme "$XC_SCHEME" -destination 'platform=iOS Simulator, name=iPhone 11, OS=14.0'
