@@ -13,6 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install dependencies
       run: |
+        pod repo update
         pod install
       shell: bash
     - name: Select Xcode version
