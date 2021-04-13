@@ -1,11 +1,12 @@
 name: SwiftLint Validation
 
 on:
-  pull_request:
-    paths:
-      - '.github/workflows/SwiftLint_action.yml'
-      - '.swiftlint.yml'
-      - '**/*.swift'
+  push:
+    branches: [master]
+      paths:
+        - '.github/workflows/SwiftLint_action.yml'
+        - '.swiftlint.yml'
+        - '**/*.swift'
 
 jobs:
   SwiftLint:
