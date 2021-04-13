@@ -43,16 +43,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E6ED103225B9660600C27ADA"
-               BuildableName = "MinipomoTests.xctest"
-               BlueprintName = "MinipomoTests"
-               ReferencedContainer = "container:Minipomo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "E6A4270626259B2E0044C7C4"
                BuildableName = "MinipomoUnitTests.xctest"
                BlueprintName = "MinipomoUnitTests"
