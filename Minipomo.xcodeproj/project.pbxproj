@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06D7FD220626C857F8629891 /* Pods_MinipomoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C9906E05F7EF897B9DDFD2 /* Pods_MinipomoTests.framework */; };
 		3BBA737814843A3F381F9FCC /* Pods_Minipomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A65862EFE0DE6472A64094 /* Pods_Minipomo.framework */; };
 		E61B84A725BB1B49001E7544 /* PomoStopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B84A625BB1B49001E7544 /* PomoStopButton.swift */; };
 		E61B84AB25BB3353001E7544 /* TimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B84AA25BB3353001E7544 /* TimeLabel.swift */; };
@@ -24,12 +23,13 @@
 		E65EF05225F3CA3900325AC2 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EF05125F3CA3900325AC2 /* SettingsController.swift */; };
 		E65EF05625F3E4F700325AC2 /* TimeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EF05525F3E4F700325AC2 /* TimeSelectViewController.swift */; };
 		E65EF05A25F4E42F00325AC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EF05925F4E42F00325AC2 /* Constants.swift */; };
+		E6A4270A26259B2E0044C7C4 /* MinipomoUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A4270926259B2E0044C7C4 /* MinipomoUnitTests.swift */; };
 		E6ED104225B99D8800C27ADA /* PomoStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED104125B99D8800C27ADA /* PomoStartButton.swift */; };
 		E6ED232325BEF8070063A96E /* TimePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED232225BEF8070063A96E /* TimePickerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E6ED103825B9660700C27ADA /* PBXContainerItemProxy */ = {
+		E6A4270C26259B2E0044C7C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E62043DA25B7087C00F5D39D /* Project object */;
 			proxyType = 1;
@@ -39,11 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EA51D764BAC6B41673F57C1 /* Pods-MinipomoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinipomoTests.debug.xcconfig"; path = "Target Support Files/Pods-MinipomoTests/Pods-MinipomoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13C9906E05F7EF897B9DDFD2 /* Pods_MinipomoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinipomoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A65862EFE0DE6472A64094 /* Pods_Minipomo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minipomo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46866D602BA13E7476911CB9 /* Pods-Minipomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minipomo.debug.xcconfig"; path = "Target Support Files/Pods-Minipomo/Pods-Minipomo.debug.xcconfig"; sourceTree = "<group>"; };
-		4B0032D3099FCBCBEDEBBB44 /* Pods-MinipomoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinipomoTests.release.xcconfig"; path = "Target Support Files/Pods-MinipomoTests/Pods-MinipomoTests.release.xcconfig"; sourceTree = "<group>"; };
 		883ECCD692BF77D72BC6C94B /* Pods-Minipomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minipomo.release.xcconfig"; path = "Target Support Files/Pods-Minipomo/Pods-Minipomo.release.xcconfig"; sourceTree = "<group>"; };
 		E61B84A625BB1B49001E7544 /* PomoStopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoStopButton.swift; sourceTree = "<group>"; };
 		E61B84AA25BB3353001E7544 /* TimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLabel.swift; sourceTree = "<group>"; };
@@ -62,7 +59,9 @@
 		E65EF05125F3CA3900325AC2 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E65EF05525F3E4F700325AC2 /* TimeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectViewController.swift; sourceTree = "<group>"; };
 		E65EF05925F4E42F00325AC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E6ED103325B9660600C27ADA /* MinipomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinipomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A4270726259B2E0044C7C4 /* MinipomoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinipomoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A4270926259B2E0044C7C4 /* MinipomoUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinipomoUnitTests.swift; sourceTree = "<group>"; };
+		E6A4270B26259B2E0044C7C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6ED104125B99D8800C27ADA /* PomoStartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoStartButton.swift; sourceTree = "<group>"; };
 		E6ED232225BEF8070063A96E /* TimePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,11 +75,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6ED103025B9660600C27ADA /* Frameworks */ = {
+		E6A4270426259B2E0044C7C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06D7FD220626C857F8629891 /* Pods_MinipomoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +90,6 @@
 			children = (
 				46866D602BA13E7476911CB9 /* Pods-Minipomo.debug.xcconfig */,
 				883ECCD692BF77D72BC6C94B /* Pods-Minipomo.release.xcconfig */,
-				0EA51D764BAC6B41673F57C1 /* Pods-MinipomoTests.debug.xcconfig */,
-				4B0032D3099FCBCBEDEBBB44 /* Pods-MinipomoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -102,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				28A65862EFE0DE6472A64094 /* Pods_Minipomo.framework */,
-				13C9906E05F7EF897B9DDFD2 /* Pods_MinipomoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				E62043E425B7087C00F5D39D /* Minipomo */,
+				E6A4270826259B2E0044C7C4 /* MinipomoUnitTests */,
 				E62043E325B7087C00F5D39D /* Products */,
 				B14BF9E1D10F1E4FC2773E9C /* Pods */,
 				D472C2466EB24DCEB919A2B6 /* Frameworks */,
@@ -121,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				E62043E225B7087C00F5D39D /* Minipomo.app */,
-				E6ED103325B9660600C27ADA /* MinipomoTests.xctest */,
+				E6A4270726259B2E0044C7C4 /* MinipomoUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +179,15 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		E6A4270826259B2E0044C7C4 /* MinipomoUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6A4270926259B2E0044C7C4 /* MinipomoUnitTests.swift */,
+				E6A4270B26259B2E0044C7C4 /* Info.plist */,
+			);
+			path = MinipomoUnitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,23 +210,22 @@
 			productReference = E62043E225B7087C00F5D39D /* Minipomo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E6ED103225B9660600C27ADA /* MinipomoTests */ = {
+		E6A4270626259B2E0044C7C4 /* MinipomoUnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6ED103C25B9660700C27ADA /* Build configuration list for PBXNativeTarget "MinipomoTests" */;
+			buildConfigurationList = E6A4270E26259B2E0044C7C4 /* Build configuration list for PBXNativeTarget "MinipomoUnitTests" */;
 			buildPhases = (
-				58366411BE29C8814E7859E8 /* [CP] Check Pods Manifest.lock */,
-				E6ED102F25B9660600C27ADA /* Sources */,
-				E6ED103025B9660600C27ADA /* Frameworks */,
-				E6ED103125B9660600C27ADA /* Resources */,
+				E6A4270326259B2E0044C7C4 /* Sources */,
+				E6A4270426259B2E0044C7C4 /* Frameworks */,
+				E6A4270526259B2E0044C7C4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E6ED103925B9660700C27ADA /* PBXTargetDependency */,
+				E6A4270D26259B2E0044C7C4 /* PBXTargetDependency */,
 			);
-			name = MinipomoTests;
-			productName = MinipomoTests;
-			productReference = E6ED103325B9660600C27ADA /* MinipomoTests.xctest */;
+			name = MinipomoUnitTests;
+			productName = MinipomoUnitTests;
+			productReference = E6A4270726259B2E0044C7C4 /* MinipomoUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -230,14 +234,14 @@
 		E62043DA25B7087C00F5D39D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					E62043E125B7087C00F5D39D = {
 						CreatedOnToolsVersion = 12.3;
 					};
-					E6ED103225B9660600C27ADA = {
-						CreatedOnToolsVersion = 12.3;
+					E6A4270626259B2E0044C7C4 = {
+						CreatedOnToolsVersion = 12.4;
 						TestTargetID = E62043E125B7087C00F5D39D;
 					};
 				};
@@ -256,7 +260,7 @@
 			projectRoot = "";
 			targets = (
 				E62043E125B7087C00F5D39D /* Minipomo */,
-				E6ED103225B9660600C27ADA /* MinipomoTests */,
+				E6A4270626259B2E0044C7C4 /* MinipomoUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6ED103125B9660600C27ADA /* Resources */ = {
+		E6A4270526259B2E0044C7C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,28 +286,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		58366411BE29C8814E7859E8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MinipomoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E6571AF125EFBA2800D16E68 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,20 +349,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6ED102F25B9660600C27ADA /* Sources */ = {
+		E6A4270326259B2E0044C7C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A4270A26259B2E0044C7C4 /* MinipomoUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E6ED103925B9660700C27ADA /* PBXTargetDependency */ = {
+		E6A4270D26259B2E0044C7C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E62043E125B7087C00F5D39D /* Minipomo */;
-			targetProxy = E6ED103825B9660700C27ADA /* PBXContainerItemProxy */;
+			targetProxy = E6A4270C26259B2E0044C7C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -563,20 +546,20 @@
 			};
 			name = Release;
 		};
-		E6ED103A25B9660700C27ADA /* Debug */ = {
+		E6A4270F26259B2E0044C7C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EA51D764BAC6B41673F57C1 /* Pods-MinipomoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98NLZHSYYL;
-				INFOPLIST_FILE = MinipomoTests/Info.plist;
+				INFOPLIST_FILE = MinipomoUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ecynmare.MinipomoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ecynmare.MinipomoUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -584,20 +567,20 @@
 			};
 			name = Debug;
 		};
-		E6ED103B25B9660700C27ADA /* Release */ = {
+		E6A4271026259B2E0044C7C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B0032D3099FCBCBEDEBBB44 /* Pods-MinipomoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98NLZHSYYL;
-				INFOPLIST_FILE = MinipomoTests/Info.plist;
+				INFOPLIST_FILE = MinipomoUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ecynmare.MinipomoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ecynmare.MinipomoUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -626,11 +609,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6ED103C25B9660700C27ADA /* Build configuration list for PBXNativeTarget "MinipomoTests" */ = {
+		E6A4270E26259B2E0044C7C4 /* Build configuration list for PBXNativeTarget "MinipomoUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E6ED103A25B9660700C27ADA /* Debug */,
-				E6ED103B25B9660700C27ADA /* Release */,
+				E6A4270F26259B2E0044C7C4 /* Debug */,
+				E6A4271026259B2E0044C7C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
