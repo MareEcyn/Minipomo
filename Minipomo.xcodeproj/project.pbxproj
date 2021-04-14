@@ -107,7 +107,7 @@
 				27F1EA3E6E96BDB38E5D77DF /* Pods-MinipomoUnitTests.debug.xcconfig */,
 				86D32523BC2453C3519B4255 /* Pods-MinipomoUnitTests.release.xcconfig */,
 			);
-			path = Pods;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E62043D925B7087C00F5D39D = {
