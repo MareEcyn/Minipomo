@@ -1,10 +1,9 @@
 stages:
   - unit-tests
 
-# before_script:
-#   - gem install bundler
-#   - bundle install
-#   - pod install
+variables:
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
 
 unit_tests:
   dependencies: []
