@@ -1,5 +1,6 @@
 stages:
   - unit-tests
+  - swiftlint
 
 variables:
   LC_ALL: "en_US.UTF-8"
@@ -17,3 +18,8 @@ unit_tests:
       - fastlane/logs
   script:
     - bundle exec fastlane tests
+
+lint:
+  stage: swiftlint
+  script:
+    - bundle exec fastlane lint

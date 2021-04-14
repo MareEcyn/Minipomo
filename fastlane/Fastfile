@@ -7,4 +7,15 @@ platform :ios do
               devices: ["iPhone 11"],
               scheme: "Minipomo")
   end
+
+  desc "Run SwiftLint"
+  lane :lint do
+    swiftlint(
+      mode: :lint,
+      strict: true,
+      output_file: "swiftlint.result.json",
+      config_file: ".swiftlint.yml",
+      raise_if_swiftlint_error: true,
+      ignore_exit_status: true
+    )
 end
