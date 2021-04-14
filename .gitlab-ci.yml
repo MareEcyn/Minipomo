@@ -14,4 +14,4 @@ unit_tests:
       - fastlane/screenshots
       - fastlane/logs
   script:
-    - fastlane tests
+    - bundle exec fastlane tests
